@@ -61,8 +61,21 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           
+       <div class="container h-100 minHeight">
+           <div class="row row-cols-1 row-cols-md-3 gap-2 gy-1 h-100">
+               <!-- left column -->
+               <div class="col col-md-2 bg-secondary text-light h-100 order-last order-md-first">
+                    <div>Col One</div>
+               </div>
+               <!-- middle column -->
+               <div class="col col-md-6 bg-dark text-light h-100">
+                   <div>Col Two</div>
+               </div>
+               <!-- right column -->
+               <div class="col col-md-2 bg-secondary text-light h-100 order-first order-md-last">
+                   <div>Col Three</div>
+               </div>
+           </div>
        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
