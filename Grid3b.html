@@ -62,16 +62,16 @@
 
     <main class="flex-shrink-0">
        <div class="container h-100 minHeight">
-           <!-- Navigation to switch from Grid3 and Grid3b -->
-           <ul class="nav nav-pills">
-               <li class="nav-item">
-                   <a href="/Grid3.html" class="nav-link active" aria-current="page">Grid 3</a>
-               </li>
-               <li class="nav-item">
-                   <a href="/Grid3b.html" class="nav-link" >Grid 3b</a>
-               </li>
-           </ul>
            <div class="row h-100">
+               <!-- Navigation to switch from Grid3 and Grid3b -->
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="/Grid3.html" class="nav-link">Grid 3</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Grid3b.html" class="nav-link active" aria-current="page">Grid 3b</a>
+                </li>
+            </ul>   
                <!-- Left Column -->
                <div class="col-7 h-100">
                     <div class="bg-secondary text-light p-2 h-100">
@@ -79,18 +79,32 @@
                     </div>
                </div>
                <!-- Right Column -->
-               <div class="col-5 h-100 d-flex flex-column justify-content-evenly">
+               <div class="col-5">
                     <!--  right top column -->
-                    <div class="bg-dark text-light h-50 p-2 overflow-auto">
-                        <p>Lorem ipsum dolor sit amet. Est laborum nihil est amet facere ut maiores unde ab rerum optio aut nostrum dicta ut excepturi perspiciatis! Qui velit dolor et fugit rerum ab voluptatem libero sit voluptas labore et atque modi id fuga sapiente. </p>  
+                    <div class="bg-secondary text-light p-2">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
                     </div>
                     <!-- right bottom column -->
-                    <div class="bg-dark text-light h-50 mt-1 p-2 overflow-hidden">
-                        <p>Lorem ipsum dolor sit amet. Est laborum nihil est amet facere ut maiores unde ab rerum optio aut nostrum dicta ut excepturi perspiciatis! Qui velit dolor et fugit rerum ab voluptatem libero sit voluptas labore et atque modi id fuga sapiente. </p>
-                    </div>
-                    <!-- button -->
-                    <div>
-                        <button class="btn btn-dark text-light border border-top p-2" type="button">Read More</button>
+                    <div class="bg-dark text-light mt-1 p-2">
+                        <h4>More Articles</h4>
+                        <!-- Nav list to more articles -->
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-Link" href="#">Article One</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-Link" href="#">Article Two</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-Link" href="#">Article Three</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-Link" href="#">Article Four</a>
+                            </li>
+                        </ul>
                     </div>
                </div>
            </div>
