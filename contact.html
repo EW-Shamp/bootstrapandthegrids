@@ -64,100 +64,49 @@
 </nav>
 
     <main class="flex-shrink-0 h-100" id="center" >
-        <div class="text-light mt-5 p-2 text-center">
-            <h2>Contact Me</h2>
+        <div class="container mt-5">
+            <h1 class="text-light text-center">Contact Me</h1>
+            <div class="border border-2 border-info shadow-lg p-2 bg-light">
+                <form action="#">
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">First Name</label>
+                            <input type="text" name="firstName" class="form-control" placeholder="First Name" aria-label="First Name" required>
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" name="lastName" class="form-control" placeholder="Last Name" aria-label="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email" required>
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Phone(optional)</label>
+                            <input type="tel" name="phone" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" aria-label="Phone"> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Subject</label>
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Message</label>
+                            <textarea type="text" name="message" class="form-control" placeholder="Message" aria-label="Message" required></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-2" type="submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
         </div>
-        <!-- Contact form done in Bootstrap Grid -->
-       <div class="container h-50 " id="formbg">
-            <!-- row one for first and last name labels -->
-            <div class="row">
-                <div class="col-6">
-                    <div class="text-black">
-                        First Name
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="text-black">
-                        Last Name
-                    </div>
-                </div>
-            </div>
-            <!-- row two for first and last name input -->
-            <div class="row">
-                <div class="col-6">
-                    <div>
-                        <input placeholder="First Name" type="text">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div>
-                        <input placeholder="Last Name" type="text">
-                    </div>
-                </div>
-            </div>
-            <!-- row three for email and phone labels -->
-            <div class="row">
-                <div class="col-6">
-                    <div class="text-black">
-                        Email
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="text-black">
-                        Phone (optional)
-                    </div>
-                </div>
-            </div>
-            <!-- row four for email and phone inputs -->
-            <div class="row">
-                <div class="col-6">
-                    <div>
-                        <input type="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div>
-                        <input type="tel" placeholder="Phone" pattern="[0-9]{3}-]0-9]{3}-[0-9]{4}">
-                    </div>
-                </div>
-            </div>
-            <!-- row five for subject label -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-black">
-                        Subject
-                    </div>
-                </div>
-            </div>
-            <!-- row six for subject input -->
-            <div class="row">
-                <div class="col-12">
-                    <div>
-                        <input placeholder="Subject" type="text">
-                    </div>
-                </div>
-            </div>
-            <!-- row seven for message label -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-black">
-                        Message
-                    </div>
-                </div>
-            </div>
-            <!-- row eight for message input -->
-            <div class="row">
-                <div class="col-12">
-                    <input placeholder="Message" type="text">
-                </div>
-            </div>
-            <!-- row nine for submit button -->
-            <div class="row">
-                <div class="col-12">
-                    <input type="submit" class="bg-dark text-light">
-                </div>
-            </div>
-       </div>
+    
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
         <div class="container-fluid text-center">
